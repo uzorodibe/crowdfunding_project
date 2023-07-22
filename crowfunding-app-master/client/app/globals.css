@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: black;
+  background-color: #ece7d5;
+}
+
+.ball-loader {
+  width: 250px;
+  height: 83.3333333333px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+}
+
+.ball-loader-ball {
+  will-change: transform;
+  height: 68.1818181818px;
+  width: 68.1818181818px;
+  border-radius: 50%;
+  background-color: #6495ed;
+  display: inline-block;
+  -webkit-animation: grow 1s ease-in-out infinite alternate;
+  animation: grow 1s ease-in-out infinite alternate;
+  transform-origin: 50% 50%;
+}
+.ball-loader-ball.ball1 {
+  margin-right: 22.7272727273px;
+}
+.ball-loader-ball.ball2 {
+  margin-right: 22.7272727273px;
+  -webkit-animation-delay: -0.33s;
+  animation-delay: -0.33s;
+}
+.ball-loader-ball.ball3 {
+  -webkit-animation-delay: -0.66s;
+  animation-delay: -0.66s;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    transform: scale(1);
+    background-color: #6495ed;
+  }
+  50% {
+    background-color: #add8e6;
+  }
+  100% {
+    transform: scale(0.2);
+    background-color: #f08080;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    background-color: #6495ed;
+  }
+  50% {
+    background-color: #add8e6;
+  }
+  100% {
+    transform: scale(0.2);
+    background-color: #f08080;
+  }
+}
