@@ -2,8 +2,8 @@
   "name": "ha-blockchain-application",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/houseafrica/ha-blockchain-application.git",
-  "author": "melitus <asmelitus@gmail.com>",
+  "repository": "https://github.com/uzorodibe/crowdfunding_project.git",
+  "author": "uzor <uzorodibe@gmail.com>",
   "license": "MIT",
   "keywords": [
     "ethereum",
