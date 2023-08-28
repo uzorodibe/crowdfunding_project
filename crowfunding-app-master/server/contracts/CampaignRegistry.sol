@@ -86,17 +86,6 @@ contract CampaignRegistry is ICampaignRegistry, Initializable, OwnableUpgradeabl
         emit UserRegistered(_email, true, msg.sender);
     }
 
-    function loginUser(string memory _email, string memory _password) external view returns (bool) {
-        User storage user = users[msg.sender];
-        if (
-            users[msg.sender].verified &&
-            keccak256(bytes(user.email)) == keccak256(bytes(_email)) &&
-            keccak256(bytes(user.password)) == keccak256(bytes(_password))
-        ) {
-            return true;
-        }
-        return false;
-    }
 
     function createCampaign(
         uint256 _targetAmount,
